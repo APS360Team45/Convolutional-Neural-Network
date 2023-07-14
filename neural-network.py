@@ -30,7 +30,7 @@ class FruitRipenessDetector(nn.Module):
          self.conv3 = nn.Conv2d(100, 150, 3, 1, 1)
          self.conv4 = nn.Conv2d(150, 200, 3, 1, 1) 
          self.conv5 = nn.Conv2d(200, 250, 3, 1, 1)
-         self.conv5 = nn.Conv2d(250, 300, 3, 1, 1)
+         self.conv6 = nn.Conv2d(250, 300, 3, 1, 1)
          self.fc1 = nn.Linear(300 * 8 * 8 , 32) # 300 * 8 * 8 output channels after conv6, reduced to 32 output features (arbitrary)
          self.fc2 = nn.Linear(32, 1) # 32 features reduced to 1 dimension for binary classification
 
